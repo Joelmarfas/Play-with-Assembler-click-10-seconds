@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+/* Screen */
+
+body {
+    width: 750px;
+    margin: auto;
+    padding: auto;
+    
+}
+
+.main_container{
+    padding: 0.5rem;
+    margin: 1rem;
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+}
+.game_container{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scores_container{
+    width: 30%;
+}
+.username_container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1{
+    font-size: 1.5rem;
+    font-family: 'Otomanopee One';
+    margin: 0.5rem;
+}
+
+label{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 1rem 1rem 0.2rem 1rem;
+}
+
+.username_input{
+    margin: 0.2rem 1rem 1rem 1rem;
+    width: 14rem;
+    font-size: 1.5rem;
+}
+button{
+    font-size: 2rem;
+    font-weight: 700;
+    width: 8rem;
+    height: 6rem;
+    margin: 1rem;
+    border-radius: 10%;
+}
+
+.is_hidden{
+    display: none;
+}
+/* Colors */
+body{
+    background-color: black;
+    color: white;
+}
+.main_container{
+    border: solid 1rem white;
+
+}
+
+.game_container{
+    
+    
+}
+
+.scores_container{
+    border: solid white 0.5rem;
+}
+
+
+button{
+    background-color: white;
+    color: black;
+}
+
