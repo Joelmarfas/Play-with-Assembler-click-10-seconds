@@ -1,0 +1,64 @@
+#page {
+  width: 250px;
+  border: 1px dashed #dc0000;
+  font-size: 23px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 23px;
+  user-select: none;
+}
+
+#clickingbox {
+  width: 70%;
+  height: 340px;
+  border: 2px solid #dc0000;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 45px;
+  padding: 22px;
+  position: relative;
+}
+
+#textlogo {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+  user-select: none;
+}
+
+#play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#play:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+#play:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
