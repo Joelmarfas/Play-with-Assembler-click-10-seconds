@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Play With Assembler</title>
-    
+
     <script src="/script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <div class="main_container">
             <div class="game_container">
+
+
                 <div class="username_container">
                     <h1>INTRODUCE YOUR USERNAME</h1>
                     <label for="username">User Name</label>
-                    <input class="username_input" type="text" id="username"><br>
+                    <input class="username" type="text" id="username" placeholder="Name"><br>
                     <button id="start_button">Start</button>
                 </div>
+
+
+
                 <div class="level_selection is_hidden">
                     <button id="roockie">Roockie</button>
                     <button id="hard">Hard</button>
@@ -27,26 +34,28 @@
                 </div>
                 <div class="roockie_level is_hidden">
                     <button>Start Game</button>
-                    <button>Click!</button>
+                    <button id='roockie_points_btn>Click!</button>
                 </div>
                 <div class="hard_level is_hidden">
                     <button>Start Game</button>
-                    <button>Click!!</button>
+                    <button id='hard_click_btn click_button'>Click!!</button>
                 </div>
                 <div class="insane_level is_hidden">
                     <button>Start Game</button>
-                    <button>Click!!!</button>
+                    <button id='insane_click_btn click_button'>Click!!!</button>
                 </div>
+
                 <div class="final_score_container is_hidden">
                     <h1>YOUR SCORE</h1>
                     <h3>Yours 10 seconds have finished</h3>
                     <p>You have made <span>X</span> clicks!!</p>
                     <button>Play Again</button>
                 </div>
+
             </div>
-            <div class="scores_container">
+            <div class="scores_container">  w
                 <h1>Ranking</h1>
-                <h4>Joel</h4>
+                <h4 id="current_player_name"></h4>
                 <p>Currently playing</p>
                 <p>X clicks</p>
                 <h4>Marcel</h4>
@@ -58,6 +67,7 @@
             </div>
         </div>
     </main>
-    
+
 </body>
+
 </html>
