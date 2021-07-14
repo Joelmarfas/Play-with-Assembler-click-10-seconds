@@ -1,64 +1,115 @@
-#page {
-  width: 250px;
-  border: 1px dashed #dc0000;
-  font-size: 23px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 30px;
-  padding: 23px;
-  user-select: none;
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+
+/* Screen */
+
+body {
+  width: 750px;
+  margin: auto;
+  padding: auto;
 }
 
-#clickingbox {
-  width: 70%;
-  height: 340px;
-  border: 2px solid #dc0000;
-  font-size: 20px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 45px;
-  padding: 22px;
-  position: relative;
+.main_container {
+  padding: 0.5rem;
+  margin: 1rem;
+  height: 750px;
+  display: flex;
+  flex-direction: row;
 }
 
-#textlogo {
-  width: 220px;
-  height: 220px;
-  margin: 0 auto;
-  margin-top: 50px;
-  display: block;
-  user-select: none;
+h1 {
+  font-size: 1.5rem;
+  font-family: "Otomanopee One";
+  margin: 0.5rem;
 }
 
-#play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
+label {
   font-size: 1rem;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 10px;
-  background-color: rgba(220, 0, 0, 1);
-  background-image: linear-gradient(
-    to top left,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(0, 0, 0, 0)
-  );
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-weight: 200;
+  margin: 1rem 1rem 0.2rem 1rem;
 }
 
-#play:hover {
-  background-color: rgba(255, 0, 0, 1);
+/* GAME CONTAINER */
+.game_container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#play:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+.username_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.username_input {
+  margin: 0.2rem 1rem 1rem 1rem;
+  width: 14rem;
+  font-size: 1.5rem;
+}
+button {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 8rem;
+  height: 6rem;
+  margin: 2rem;
+  border-radius: 10%;
+}
+
+.start_button {
+  margin: 1rem;
+}
+
+.level_button {
+  width: 6rem;
+  height: 4rem;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* SCORES CONTAINER */
+.scores_container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input validation */
+
+.alert_box {
+  height: 1rem;
+  font-size: 0.5rem;
+}
+/* Colors */
+body {
+  background-color: black;
+  color: white;
+}
+.main_container {
+  border: solid 1rem white;
+}
+
+.alert_box {
+  color: white;
+}
+
+.username_input:invalid {
+  border: 3px solid red;
+  color: red;
+}
+
+.scores_container {
+  border: solid white 0.3rem;
+}
+
+button {
+  background-color: white;
+  color: black;
+}
+
+/* IS HIDDEN */
+.is_hidden {
+  display: none;
 }
