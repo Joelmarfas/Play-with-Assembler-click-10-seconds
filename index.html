@@ -8,32 +8,37 @@
     <title>Play With Assembler</title>
     
     <script src="/script.js" defer></script>
+    <script src="/username.js" defer></script>
+    <script src="/selectLevel.js" defer></script>
+    <script src="js/insane_level.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <div class="main_container">
             <div class="game_container">
-                <div class="username_container">
+                <div class="username_container" id="username_container">
                     <h1>INTRODUCE YOUR USERNAME</h1>
                     <label for="username">User Name</label>
-                    <input class="username_input" type="text" id="username"><br>
-                    <button id="start_button">Start</button>
+                    <input class="username_input" type="text" id="username" pattern="^([a-zA-Z0-9]){1,16}$">
+                    <div class="alert_box" id="alert_box"></div>
+                    <button class="start_button" id="start_button">Start</button>
+                    </form>
                 </div>
-                <div class="level_selection is_hidden">
-                    <button id="roockie">Roockie</button>
-                    <button id="hard">Hard</button>
-                    <button id="insane">Insane</button>
+                <div class="level_selection is_hidden" id="level_selection">
+                    <button class="level_button" id="roockie">Roockie</button>
+                    <button class="level_button" id="hard">Hard</button>
+                    <button class="level_button" id="insane">Insane</button>
                 </div>
-                <div class="roockie_level is_hidden">
+                <div class="roockie_level is_hidden" id="roockie_level">
                     <button>Start Game</button>
                     <button>Click!</button>
                 </div>
-                <div class="hard_level is_hidden">
+                <div class="hard_level is_hidden" id="hard_level">
                     <button>Start Game</button>
                     <button>Click!!</button>
                 </div>
-                <div class="insane_level is_hidden">
+                <div class="insane_level is_hidden" id="insane_level">
                     <button>Start Game</button>
                     <button>Click!!!</button>
                 </div>
