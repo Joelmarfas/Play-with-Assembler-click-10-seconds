@@ -11,7 +11,8 @@
    
     <script src="/username.js" defer></script>
     <script src="/selectLevel.js" defer></script>
-    <!-- <script src="js/insane_level.js" defer></script> -->
+    <script src="/selectLevelJS.js" defer></script>
+    <script src="/insaneLevelJS.js" defer></script>
     <script src="/roockie_level.js"defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +20,7 @@
 <body>
     <main>
         <div class="main_container">
-            <div class="game_container">
+            <div class="game_container" id="game_container">
                 <div class="username_container" id="username_container">
                     <h1>INTRODUCE YOUR USERNAME</h1>
                     <label for="username">User Name</label>
@@ -52,8 +53,8 @@
                     <button class="is_hidden">Game Over</button>
                 </div>
                 <div class="insane_level is_hidden" id="insane_level">
-                    <button>Start Game</button>
-                    <button id='insane_click_btn click_button'>Click!!!</button>
+                    <button id="start_insane">Start Game</button>
+                    <button class="click_insane is_hidden" id="click_insane">Click!!!</button>
                 </div>
 
                 <div class="final_score_container is_hidden">
