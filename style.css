@@ -16,23 +16,6 @@ body {
     display: flex;
     flex-direction: row;
 }
-.game_container{
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.scores_container{
-    width: 30%;
-}
-.username_container{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
 
 h1{
     font-size: 1.5rem;
@@ -41,9 +24,29 @@ h1{
 }
 
 label{
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 200;
     margin: 1rem 1rem 0.2rem 1rem;
+}
+
+
+
+
+/* GAME CONTAINER */
+.game_container{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.username_container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .username_input{
@@ -56,12 +59,38 @@ button{
     font-weight: 700;
     width: 8rem;
     height: 6rem;
-    margin: 1rem;
+    margin: 2rem;
     border-radius: 10%;
 }
 
-.is_hidden{
-    display: none;
+.start_button{
+    margin: 1rem;
+}
+
+.level_button{
+    width: 6rem;
+    height: 4rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* SCORES CONTAINER */
+.scores_container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+    
+}
+
+/* Input validation */
+
+
+
+.alert_box{
+    height: 1rem;
+    font-size: 0.5rem;
 }
 /* Colors */
 body{
@@ -73,22 +102,28 @@ body{
 
 }
 
-.game_container{
-    
-    
+.alert_box{
+    color: white;
+}
+
+.username_input:invalid {
+    border: 3px solid red;
+    color: red;
 }
 
 .scores_container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid white 0.5rem;
-    padding-top: 3rem;
-   
+    border: solid white 0.3rem;
+}
 
 
 button{
     background-color: white;
     color: black,
+}
+
+
+/* IS HIDDEN */
+.is_hidden{
+    display: none;
 }
 

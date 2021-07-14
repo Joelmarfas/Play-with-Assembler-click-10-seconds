@@ -1,31 +1,24 @@
-/* variables */
-/* let username = document.getElementById("username").innerHTML;
+/* FUNCTION THAT COUNTS THE CLICKS ON PRESSING CLICK ME BUTTON */
 
+let clickMain = document.getElementById('click_rookie');
+clickMain.addEventListener('click', countClicks);
 
+var clicks = 0;
+function countClicks() {
+	clicks += 1;
+	document.getElementById('clicks').innerHTML = clicks;
+}
 
-console.log(username)
-
-
-
-let startBtn = document.getElementById('start_button');
-
-startBtn.addEventListener('click', () =>
-{
-    let input = document.getElementById('username').value;
-    alert(input); 
-}  */
-
-let count = 0;
-function myFunction() {
-  count+=1;
-    document.getElementById("btn").innerHTML = count;
-    
-     var clicks = 0;
-    function myFunction() {
- 
-        clicks +=  1;
-        document.getElementById("demo").innerHTML = clicks;
-
-
-    }
+// PRESSING START GAME MAKES ITSELF HIDE AND 'CLICK_ROOKIE' BUTTON APPEAR
+let startGame = document.getElementById('start_G');
+startGame.addEventListener('click', hideG);
+function hideG() {
+	startGame.classList.add('is_hidden');
+  clickMain.classList.remove('is_hidden');
+		setTimeout(function () {
+      alert('Your time is up!!!!!')
+    }, 10000);
+   
+  
+	}
 
