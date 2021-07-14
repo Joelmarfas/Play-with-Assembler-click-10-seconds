@@ -77,6 +77,11 @@ button{
 /* SCORES CONTAINER */
 .scores_container{
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+    
 }
 
 /* Input validation */
