@@ -1,5 +1,5 @@
 // Variable Declaration
-
+let gameContainer=document.getElementById("game_container")
 let startButton = document.getElementById("start_button");
 let userNameContainer = document.getElementById("username_container");
 let levelSelection = document.getElementById("level_selection");
