@@ -19,7 +19,6 @@ body {
 h1 {
   font-size: 1.5rem;
   font-family: "Otomanopee One";
-  margin: 0.5rem;
 }
 
 label {
@@ -31,6 +30,7 @@ label {
 /* GAME CONTAINER */
 .game_container {
   width: 70%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,12 +68,117 @@ button {
   font-size: 1.2rem;
 }
 
+#level_selection_title {
+  padding-left: 2.6rem;
+}
+
+.score_results {
+  font-size: 1.5rem;
+  font-family: "Otomanopee One";
+  margin: 0.5rem;
+}
+
+/* ROOCKIE LEVEL CONTAINER */
+
+.roockie_level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HIT ME BUTTON ROOCKIE LEVEL  */
+
+.click_hit_roockie {
+  background: red;
+  border: 0;
+  font-size: 20px;
+  padding: 10px 20px;
+  position: relative;
+  animation-name: shake;
+  animation-duration: 1s;
+
+  animation-timing-function: ease-in;
+  cursor: pointer;
+}
+
+.click_hit_roockie:active {
+  animation-name: shakeAnim;
+}
+
+@keyframes shakeAnim {
+  0% {
+    left: 0;
+  }
+  1% {
+    left: -3px;
+  }
+  2% {
+    left: 5px;
+  }
+  3% {
+    left: -8px;
+  }
+  4% {
+    left: 8px;
+  }
+  5% {
+    left: -5px;
+  }
+  6% {
+    left: 3px;
+  }
+  7% {
+    left: 0;
+  }
+}
+
+@keyframes shake {
+  0% {
+    left: 0;
+  }
+  1% {
+    left: -3px;
+  }
+  2% {
+    left: 5px;
+  }
+  3% {
+    left: -8px;
+  }
+  4% {
+    left: 8px;
+  }
+  5% {
+    left: -5px;
+  }
+  6% {
+    left: 3px;
+  }
+  7% {
+    left: 0;
+  }
+}
+
+/* INSANE LEVEL */
+
+.click_insane {
+  position: absolute;
+  margin: 0;
+}
+
 /* SCORES CONTAINER */
 .scores_container {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Result phrase */
+
+.span_results {
+  font-size: 2rem;
 }
 
 /* Input validation */
@@ -107,6 +212,31 @@ body {
 button {
   background-color: white;
   color: black;
+}
+
+.start_button {
+  color: black;
+  background-image: linear-gradient(45deg, black 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 500ms ease-in-out;
+}
+.start_button:hover {
+  background-position: 0;
+  color: white;
+}
+
+.level_button {
+  color: black;
+  background-image: linear-gradient(45deg, black 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 500ms ease-in-out;
+}
+
+.level_button:hover {
+  background-position: 0;
+  color: white;
 }
 
 /* IS HIDDEN */

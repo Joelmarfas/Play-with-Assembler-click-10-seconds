@@ -1,28 +1,35 @@
 // Variable Declaration
-
+let gameContainer=document.getElementById("game_container")
 let startButton = document.getElementById("start_button");
 let userNameContainer = document.getElementById("username_container");
 let levelSelection = document.getElementById("level_selection");
-let userName = document.getElementById("username");
+let userNameInput = document.getElementById("username");
 let alertBox = document.getElementById("alert_box");
-let validUsername;
+let validUserName;
+
+let userName;
+
 
 let regExpUserName = /^[A-Za-z0-9]+$/;
 
+
+
 // EVENT LISTENERS
 
-userName.addEventListener("input", invalidUsername);
+userNameInput.addEventListener("input", invalidUsername);
 startButton.addEventListener("click", continues);
 
 // FUNCTIONS
 
 function invalidUsername(e){
     
-    if(userName.value === "" || userName.value === null){
+    if(userNameInput.value === "" || userNameInput.value === null){
         alertBox.innerHTML="Please introduce an UserName"
+        validUserName=false;
     }
     else if(!e.target.validity.valid ){
         alertBox.innerHTML="Please use only letters or numbers"
+        validUserName=false;
     }
     else{
         alertBox.innerHTML=null
@@ -33,8 +40,17 @@ function invalidUsername(e){
 function continues(e){
     
     if(validUserName===true){
+
+        let lastResult = document.getElementById("last_result");
+		let currentlyPlaying = document.getElementById("currently_playing");
+
+
+        userName=userNameInput.value;
         userNameContainer.classList.add("is_hidden");
         levelSelection.classList.remove("is_hidden");
+        lastResult.classList.add('is_hidden');
+		currentlyPlaying.classList.remove("is_hidden");
+        
     }
 
 }
