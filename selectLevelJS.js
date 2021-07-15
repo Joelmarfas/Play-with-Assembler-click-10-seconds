@@ -4,6 +4,9 @@ let roockieBtn = document.getElementById("roockie");
 let hardBtn = document.getElementById("hard");
 let insaneBtn = document.getElementById("insane");
 
+let insaneStart=document.getElementById("start_insane");
+let insaneClick = document.getElementById("click_insane");
+
 
 
 let roockieLvl= document.getElementById("roockie_level");
@@ -41,4 +44,6 @@ function insane(){
 
     levelSelection.classList.add("is_hidden");
     insaneLvl.classList.remove("is_hidden");
+    insaneStart.classList.remove("is_hidden");
+    insaneClick.classList.add("is_hidden");
 }
