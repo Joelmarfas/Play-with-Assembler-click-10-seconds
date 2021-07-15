@@ -8,9 +8,11 @@ let alertBox = document.getElementById("alert_box");
 let validUserName;
 
 let userName;
+
+
 let regExpUserName = /^[A-Za-z0-9]+$/;
 
-let users=[];
+
 
 // EVENT LISTENERS
 
@@ -38,9 +40,16 @@ function invalidUsername(e){
 function continues(e){
     
     if(validUserName===true){
+
+        let lastResult = document.getElementById("last_result");
+		let currentlyPlaying = document.getElementById("currently_playing");
+
+
         userName=userNameInput.value;
         userNameContainer.classList.add("is_hidden");
         levelSelection.classList.remove("is_hidden");
+        lastResult.classList.add('is_hidden');
+		currentlyPlaying.classList.remove("is_hidden");
         
     }
 

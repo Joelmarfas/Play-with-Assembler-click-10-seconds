@@ -38,26 +38,23 @@
                 </div>
 
                 <div class="roockie_level is_hidden" id="roockie_level">
-                    <button id='start_G'>Start Game</button>
+                    <button id="start_G">Start Game</button>
                     <button type="button" id="click_roockie" class="click_hit_roockie is_hidden">HIT ME HARD !</button>
-                    <p id="span_clicks" class="span_results is_hidden">You scored: <span id="clicks"></span> clicks!</p>
-                    <button type="button" id="gameOver" class="is_hidden">Game Over!</button>
                 </div>
 
                 <div class="hard_level is_hidden" id="hard_level">
-                    <button>Start Game</button>
-                    <button id='hard_click_btn click_button'>Click!!</button>
-                    <button class="is_hidden">Game Over</button>
+                    <button id="start_hard">Start Game</button>
+                    <button class="click_hard" id='click_hard'>Click!!</button>
                 </div>
                 <div class="insane_level is_hidden" id="insane_level">
                     <button id="start_insane">Start Game</button>
                     <button class="click_insane is_hidden" id="click_insane">Click!!!</button>
                 </div>
 
-                <div class="final_score_container is_hidden" id='final_score_container'>
+                <div class="final_score_container is_hidden" id="final_score_container">
                     <h1>YOUR SCORE</h1>
                     <h3>Yours 10 seconds have finished</h3>
-                    <p>You have made <span>X</span> clicks!!</p>
+                    <p>You have made <span id="current_score"></span> clicks!!</p>
                     <button id="play_again_button">Play Again</button>
                 </div>
 
@@ -65,14 +62,17 @@
             <div class="scores_container">
                 <h1>Ranking</h1>
                 <h4 id="current_player_name"></h4>
-                <p>Currently playing</p>
-                <p>X clicks</p>
-                <h4>Marcel</h4>
-                <p>50 Clicks</p>
-                <h4>Josep</h4>
-                <p>30 Clicks</p>
-                <h4>Fernando</h4>
-                <p>20 Clicks</p>
+                <p id="currently_playing">Currently playing</p>
+                <p class="is_hidden" id="last_result"><span id="last_score"></span>Clicks</p>
+                
+                <h4 id="first_name">Marcel</h4>
+                <p id="first_place">50 Clicks</p>
+                
+                <h4 id="second_name">Josep</h4>
+                <p id="second_place">30 Clicks</p>
+                
+                <h4 id="third_name">Fernando</h4>
+                <p id="third_place">20 Clicks</p>
             </div>
         </div>
     </main>
