@@ -33,3 +33,12 @@ function countClicks() {
 	clicks += 1;
 	counted = document.getElementById('clicks').innerHTML = clicks;
 }
+
+
+// FUNCTION TO BE ABLE TO USE SPACEBAR TO HIT THE BUTTON
+
+document.onkeydown = function (e) {
+	if (e.target === 32) {              //  USED 'Target' BECAUSE 'KeyCode' IS DEPRECATED
+		clickMain.click();
+	}
+};
