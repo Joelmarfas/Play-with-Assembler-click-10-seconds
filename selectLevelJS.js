@@ -8,6 +8,8 @@ let insaneStart = document.getElementById("start_insane");
 let insaneClick = document.getElementById("click_insane");
 let clickRoockie = document.getElementById("click_roockie");
 let startRoockie = document.getElementById("start_G");
+let clickHard = document.getElementById("click_hard");
+let startHard = document.getElementById("start_hard");
 
 // Each level screen
 
@@ -33,6 +35,8 @@ function roockie() {
 function hard() {
   levelSelection.classList.add("is_hidden");
   hardLvl.classList.remove("is_hidden");
+  clickHard.classList.add("is_hidden");
+  startHard.classList.remove("is_hidden");
 }
 
 function insane() {

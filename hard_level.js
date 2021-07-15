@@ -1,21 +1,32 @@
 /* FUNCTION THAT COUNTS THE CLICKS ON PRESSING CLICK ME BUTTON */
 
-let clickMain = document.getElementById("click_hard");
-clickMains.addEventListener("click", countClicks);
+clickHard.addEventListener("click", countHardClicks);
 
-var click_hard = 0;
-function countClicks() {
-  click_hard += 1;
-  document.getElementById("click_hard").innerHTML = clicks_hard;
+counter = 0;
+function countHardClicks() {
+  counter += 1;
 }
 
 // PRESSING START GAME MAKES ITSELF HIDE AND 'CLICK_hard' BUTTON APPEAR
-let startGames = document.getElementById("start_Game");
-startGame.addEventListener("click", hideGg);
-function hideGg() {
-  startGames.classList.add("is_hidden");
-  clickMains.classList.remove("is_hidden");
+startHard.addEventListener("click", hideG);
+
+function hideG() {
+  startHard.classList.add("is_hidden");
+  clickHard.classList.remove("is_hidden");
+
   setTimeout(function () {
-    alert("Your time is up!!!!!");
+    let currentScore = document.getElementById("current_score");
+    currentScore.innerHTML = counter;
+    let lastScore = document.getElementById("last_score");
+    lastScore.innerHTML = counter;
+    let lastResult = document.getElementById("last_result");
+    let currentlyPlaying = document.getElementById("currently_playing");
+    ranking.push({ Username: userName, Score: counter });
+    //  SHOW AND HIDE ELEMENTS
+
+    finalScoreCont.classList.remove("is_hidden");
+    clickHard.classList.add("is_hidden");
+    lastResult.classList.remove("is_hidden");
+    currentlyPlaying.classList.add("is_hidden");
   }, 10000);
 }
