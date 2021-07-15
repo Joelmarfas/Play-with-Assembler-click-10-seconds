@@ -24,10 +24,22 @@ function switchButton(){
     insaneClick.classList.remove("is_hidden");
 
      setTimeout(function(){
+        let currentScore = document.getElementById("current_score");
+		currentScore.innerHTML=counter;
+		let lastScore = document.getElementById("last_score");
+		lastScore.innerHTML = counter;
+        let lastResult = document.getElementById("last_result");
+		let currentlyPlaying = document.getElementById("currently_playing");
         
         ranking.push({Username:userName, Score: counter})
+        
         insaneLvl.classList.add("is_hidden");
-        finalScoreCont.classList.remove("is_hidden");},3000)
+        finalScoreCont.classList.remove("is_hidden");
+        lastResult.classList.remove('is_hidden');
+		currentlyPlaying.classList.add("is_hidden");
+    
+    },3000)
+        console.log(ranking)
     }
 
 
@@ -49,7 +61,5 @@ function movement(){
 }
 
 function counting(){
-        counter+=3
-        console.log(counter)
-    
+        counter+=3    
 }

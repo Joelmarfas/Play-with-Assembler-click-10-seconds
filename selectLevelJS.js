@@ -3,11 +3,14 @@
 let roockieBtn = document.getElementById("roockie");
 let hardBtn = document.getElementById("hard");
 let insaneBtn = document.getElementById("insane");
-
+    //  buttons inside each level
 let insaneStart=document.getElementById("start_insane");
 let insaneClick = document.getElementById("click_insane");
+let clickRoockie = document.getElementById('click_roockie');
+let startRoockie = document.getElementById('start_G');
 
 
+        // Each level screen
 
 let roockieLvl= document.getElementById("roockie_level");
 let hardLvl= document.getElementById("hard_level");
@@ -30,6 +33,8 @@ function roockie(){
 
     levelSelection.classList.add("is_hidden");
     roockieLvl.classList.remove("is_hidden");
+    clickRoockie.classList.add("is_hidden")
+    startRoockie.classList.remove("is_hidden")
 
 }
 
@@ -37,6 +42,7 @@ function hard(){
 
     levelSelection.classList.add("is_hidden");
     hardLvl.classList.remove("is_hidden");
+    
 
 }
 
