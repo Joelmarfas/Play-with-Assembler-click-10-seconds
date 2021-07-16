@@ -1,18 +1,18 @@
 // Variable Declaration
 
-let roockieBtn = document.getElementById("roockie");
+let rookieBtn = document.getElementById("rookie");
 let hardBtn = document.getElementById("hard");
 let insaneBtn = document.getElementById("insane");
     //  buttons inside each level
 let insaneStart=document.getElementById("start_insane");
 let insaneClick = document.getElementById("click_insane");
-let clickRoockie = document.getElementById('click_roockie');
-let startRoockie = document.getElementById('start_G');
+let clickRookie = document.getElementById('click_rookie');
+let startRookie = document.getElementById('start_G');
 
 
         // Each level screen
 
-let roockieLvl= document.getElementById("roockie_level");
+let rookieLvl= document.getElementById("rookie_level");
 let hardLvl= document.getElementById("hard_level");
 let insaneLvl= document.getElementById("insane_level");
 
@@ -25,7 +25,7 @@ let letsGo = document.getElementById('lets_go_container')
 
 // EVENT LISTENERS
 
-roockieBtn.addEventListener('click', roockie);
+rookieBtn.addEventListener('click', rookie);
 hardBtn.addEventListener('click', hard);
 insaneBtn.addEventListener('click', insane);
 letsGo.addEventListener('click', presentGame);
@@ -40,12 +40,12 @@ function presentGame() {
 
 
 
-function roockie(){
+function rookie(){
 
     levelSelection.classList.add("is_hidden");
-    roockieLvl.classList.remove("is_hidden");
-    clickRoockie.classList.add("is_hidden")
-    startRoockie.classList.remove("is_hidden")
+    rookieLvl.classList.remove("is_hidden");
+    clickRookie.classList.add("is_hidden")
+    startRookie.classList.remove("is_hidden")
 
 }
 

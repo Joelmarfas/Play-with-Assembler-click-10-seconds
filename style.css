@@ -14,13 +14,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    
+    margin-top: 10rem;
 }
 
-.lets_go {
-    background-color: #5270fc;
+.introduction_background_image {
+    width: 40rem;
+    height: auto;
 }
 
+.lets_go_btn {
+    background-color: white;
+}
 
 .main_container{
     padding: 0.5rem;
@@ -82,15 +86,18 @@ button{
     margin: 1rem;
 }
 
-.level_button{
-    width: 6rem;
-    height: 4rem;
-    margin: 0.5rem;
-    font-size: 1.2rem;
+
+.level_selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
 }
 
 .level_selection_title {
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .score_results{
@@ -99,18 +106,18 @@ button{
     margin: 0.5rem;
 }
 
-/* ROOCKIE LEVEL CONTAINER */
+/* ROOKIE LEVEL CONTAINER */
 
-.roockie_level {
+.rookie_level {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-/* HIT ME BUTTON ROOCKIE LEVEL  */
+/* HIT ME BUTTON ROOKIE LEVEL  */
 
-.click_hit_roockie {
+.click_rookie {
     background: red;
     border: 0;
     font-size: 20px;
@@ -118,12 +125,11 @@ button{
     position: relative;
     animation-name: shake;
     animation-duration: 1s;
-    
     animation-timing-function: ease-in;
     cursor: pointer;
 }
 
-.click_hit_roockie:active {
+.click_rookie:active {
   animation-name: shakeAnim;
 }
 
@@ -183,6 +189,15 @@ button{
     
 }
 
+/* FINAL SCORE CONTAINER */
+
+.final_score_container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;    
+}
+
 /* Result phrase */
 
 .span_results{
@@ -224,38 +239,31 @@ body{
     border: solid white 0.3rem;
 }
 
+
+
+/* INDIVIDUAL PROFILES IN THE SCORE CONTAINER */
+
+
 .current_place_profile {
     padding-bottom: 4rem;
+    border-bottom: 0.3rem;
+    border-color: white;
+    border-style: solid;
 }
 
-.first_place_profile {
-    padding: 1rem;
-
+.current_place_profile, .first_place_profile, .second_place_profile, .third_place_profile {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
 }
 
-#first_place {
+#first_name, #second_name, #third_name{
     margin: 0.3rem;
 }
 
-#first_name {
+#first_clicks, #second_clicks, #third_clicks{
     margin: 0.3rem;
-}
-
-#first_place {
-    margin: 0.3rem;
-}
-
-#first_name {
-    margin: 0.3rem;
-}
-
-
-.second_place_profile {
-    padding: 1rem;
-}
-
-.third_place_profile {
-    padding: 1rem;
 }
 
 button{
@@ -284,10 +292,11 @@ button{
     background-position: 100%;
     background-size: 400%;
     transition: background 500ms ease-in-out;
-    
-      
-
+    font-size: 1.6rem;
+    margin: 0;
+    margin-top: 2.5rem;
 }
+
 
 .level_button:hover {
     background-position: 0;
@@ -296,6 +305,9 @@ button{
 
 }
 
+.points_per_click {
+    font-size: 0.7rem;
+}
 
 
 /* IS HIDDEN */
