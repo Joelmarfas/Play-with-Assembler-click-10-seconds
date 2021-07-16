@@ -12,7 +12,9 @@ function hideG() {
 			currentScore.innerHTML=counter;
 			let lastScore = document.getElementById("last_score");
 			lastScore.innerHTML = counter;
+
 			ranking.push({Username:userName, Score: counter});
+			
 			let lastResult = document.getElementById("last_result");
 			let currentlyPlaying = document.getElementById("currently_playing");
 			        //  SHOW AND HIDE ELEMENTS
@@ -25,7 +27,7 @@ function hideG() {
 
 			
 
-		}, 3000);
+		}, 10000);
 }
 
 // FUNCTION THAT COUNTS THE CLICKS ON PRESSING HIT ME HARD BUTTON

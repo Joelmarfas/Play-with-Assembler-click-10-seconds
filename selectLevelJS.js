@@ -33,8 +33,8 @@ function roockie(){
 
     levelSelection.classList.add("is_hidden");
     roockieLvl.classList.remove("is_hidden");
-    clickRoockie.classList.add("is_hidden")
-    startRoockie.classList.remove("is_hidden")
+    clickRoockie.classList.add("is_hidden");
+    startRoockie.classList.remove("is_hidden");
 
 }
 

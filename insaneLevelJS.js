@@ -31,14 +31,14 @@ function switchButton(){
         let lastResult = document.getElementById("last_result");
 		let currentlyPlaying = document.getElementById("currently_playing");
         
-        ranking.push({Username:userName, Score: counter})
+        ranking.push({Username: userName, Score: counter})
         
         insaneLvl.classList.add("is_hidden");
         finalScoreCont.classList.remove("is_hidden");
         lastResult.classList.remove('is_hidden');
 		currentlyPlaying.classList.add("is_hidden");
     
-    },3000)
+    },10000)
         console.log(ranking)
     }
 
@@ -53,7 +53,7 @@ function movement(){
         let contHeight = gameContainer.getBoundingClientRect().height;
 
         let x = (Math.random() * (contWidth - btnWidth)).toFixed();
-        let y = (Math.random() * (contHeight - btnHeight));
+        let y = (Math.random() * (contHeight - btnHeight)).toFixed();
 
         insaneClick.style.left = x +'px';
         insaneClick.style.top = y +'px';

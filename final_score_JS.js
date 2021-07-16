@@ -1,7 +1,3 @@
-// VARIABLE DECLARATION
-
-let playAgainBtn = document.getElementById("play_again_button");
-
 
 playAgainBtn.addEventListener("click", playAgainSwitch);
 

@@ -9,11 +9,6 @@ let validUserName;
 
 let userName;
 
-
-let regExpUserName = /^[A-Za-z0-9]+$/;
-
-
-
 // EVENT LISTENERS
 
 userNameInput.addEventListener("input", invalidUsername);
@@ -46,10 +41,12 @@ function continues(e){
 
 
         userName=userNameInput.value;
+        
         userNameContainer.classList.add("is_hidden");
         levelSelection.classList.remove("is_hidden");
         lastResult.classList.add('is_hidden');
 		currentlyPlaying.classList.remove("is_hidden");
+
         
     }
 
