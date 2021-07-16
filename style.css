@@ -193,6 +193,11 @@ button {
 
 /* HARD LEVEL */
 
+.hard_level {
+  justify-content: center;
+  align-content: center;
+}
+
 .click_hard {
     position: absolute;
     margin: 0;
