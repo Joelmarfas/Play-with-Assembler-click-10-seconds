@@ -4,7 +4,7 @@ startHard.addEventListener("click", hideG);
 
 /* FUNCTION THAT COUNTS THE CLICKS ON PRESSING CLICK ME BUTTON */
 function countHardClicks() {
-  counter += 1;
+  counter += 2;
 }
 // PRESSING START GAME MAKES ITSELF HIDE AND 'CLICK_hard' BUTTON APPEAR
 function hideG() {

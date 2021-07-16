@@ -7,11 +7,12 @@ let counter=0;
 insaneStart.addEventListener("click", switchButton);
 insaneClick.addEventListener("click", movement);
 insaneClick.addEventListener("click", counting);
+insaneClick.addEventListener("click", changeSize)
 
 // FUNCTIONS
 
 function counting(){
-    counter+=3    
+    counter+=5    
 }
 
 function switchButton(){
@@ -53,6 +54,31 @@ function movement(){
 
         insaneClick.style.left = x +'px';
         insaneClick.style.top = y +'px';
-
 }
 
+// function changeSize(min, max){
+//     max = 10
+//     min =3
+//     let btnWidth = insaneClick.getBoundingClientRect().width;
+//     let btnHeight = insaneClick.getBoundingClientRect().height;
+
+//     btnWidth = (Math.random() * (max - min)+min);
+//     btnHeight = (Math.random() * (max - min)+min);
+
+//     insaneClick.style.width = btnWidth + "rem"
+//     insaneClick.style.height = btnHeight + "rem"
+
+// }
+
+function changeSize(){
+    
+    let btnWidth = insaneClick.getBoundingClientRect().width;
+    let btnHeight = insaneClick.getBoundingClientRect().height;
+
+    btnWidth = (Math.random() * (10 - 3)+3);
+    btnHeight = (Math.random() * (10 - 2)+2);
+
+    insaneClick.style.width = btnWidth + "rem"
+    insaneClick.style.height = btnHeight + "rem"
+
+}
