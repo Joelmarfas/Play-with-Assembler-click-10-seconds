@@ -1,13 +1,7 @@
 
 // VARIABLES DECLARATION
 
-
-
 let finalScoreCont = document.getElementById("final_score_container");
-
-let counter=0;
-let insaneScore;
-
 
 // EVENT LISTENERS
 insaneStart.addEventListener("click", switchButton);
@@ -16,7 +10,9 @@ insaneClick.addEventListener("click", counting);
 
 // FUNCTIONS
 
-
+function counting(){
+    counter+=3    
+}
 
 function switchButton(){
     
@@ -60,6 +56,3 @@ function movement(){
 
 }
 
-function counting(){
-        counter+=3    
-}
