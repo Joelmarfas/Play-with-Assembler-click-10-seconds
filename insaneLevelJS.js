@@ -2,7 +2,7 @@
 // VARIABLES DECLARATION
 
 let finalScoreCont = document.getElementById("final_score_container");
-
+let counter=0;
 // EVENT LISTENERS
 insaneStart.addEventListener("click", switchButton);
 insaneClick.addEventListener("click", movement);
