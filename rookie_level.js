@@ -15,15 +15,12 @@ function hideG() {
 			ranking.push({Username:userName, Score: counter});           // PUSHES DATA INTO AN OBJECT TYPE OF ARRAY
 			let lastResult = document.getElementById("last_result");
 			let currentlyPlaying = document.getElementById("currently_playing");
-			  
 			//  SHOW AND HIDE ELEMENTS
-			
 			finalScoreCont.classList.remove('is_hidden');
 			clickRookie.classList.add('is_hidden');
 			lastResult.classList.remove('is_hidden');
 			currentlyPlaying.classList.add("is_hidden");
-
-		}, 3000);
+		}, 10000);
 }
 
 // FUNCTION THAT COUNTS THE CLICKS ON PRESSING HIT ME HARD BUTTON

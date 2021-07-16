@@ -38,7 +38,7 @@ function switchButton(){
         lastResult.classList.remove('is_hidden');
 		currentlyPlaying.classList.add("is_hidden");
     
-    },3000)
+    },10000)
         console.log(ranking)
     }
 
