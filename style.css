@@ -110,7 +110,7 @@ button {
 
 /* ROOKIE and HARD LEVEL CLICK BUTTON ANIMATION */
 
-.click_rookie, .click_hard {
+.click_rookie {
     background: red;
     border: 0;
     font-size: 20px;
@@ -122,7 +122,23 @@ button {
     cursor: pointer;
 }
 
-.click_rookie, .click_hard:active {
+.click_rookie:active {
+  animation-name: shakeAnim;
+}
+
+.click_hard {
+    background: red;
+    border: 0;
+    font-size: 20px;
+    padding: 10px 20px;
+    position: relative;
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    cursor: pointer;
+}
+
+.click_hard:active {
   animation-name: shakeAnim;
 }
 

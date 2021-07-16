@@ -41,8 +41,6 @@ function presentGame() {
 
 }
 
-
-
 function rookie(){
 
     levelSelection.classList.add("is_hidden");
