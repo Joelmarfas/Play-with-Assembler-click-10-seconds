@@ -3,12 +3,15 @@
 let rookieBtn = document.getElementById("rookie");
 let hardBtn = document.getElementById("hard");
 let insaneBtn = document.getElementById("insane");
-    //  buttons inside each level
-let insaneStart=document.getElementById("start_insane");
+//  buttons inside each level
+let insaneStart = document.getElementById("start_insane");
 let insaneClick = document.getElementById("click_insane");
 let clickRookie = document.getElementById('click_rookie');
 let startRookie = document.getElementById('start_G');
+let clickHard = document.getElementById("click_hard");
+let startHard = document.getElementById("start_hard");
 
+// Each level screen
 
         // Each level screen
 
@@ -49,17 +52,16 @@ function rookie(){
 
 }
 
-function hard(){
-
-    levelSelection.classList.add("is_hidden");
-    hardLvl.classList.remove("is_hidden");
-    
-
+function hard() {
+  levelSelection.classList.add("is_hidden");
+  hardLvl.classList.remove("is_hidden");
+  clickHard.classList.add("is_hidden");
+  startHard.classList.remove("is_hidden");
 }
 
 function insane() {
-	levelSelection.classList.add('is_hidden');
-	insaneLvl.classList.remove('is_hidden');
-	insaneStart.classList.remove('is_hidden');
-	insaneClick.classList.add('is_hidden');
+  levelSelection.classList.add("is_hidden");
+  insaneLvl.classList.remove("is_hidden");
+  insaneStart.classList.remove("is_hidden");
+  insaneClick.classList.add("is_hidden");
 }

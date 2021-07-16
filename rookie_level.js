@@ -1,4 +1,3 @@
-
 // FUNCTION THAT STARTS THE GAME
 
 startRookie.addEventListener('click', hideG);
@@ -35,7 +34,3 @@ function countClicks() {
 		}
 	}
 }
-
-
-
-

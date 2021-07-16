@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
 
 /* Screen */
 
 body {
-    width: 750px;
-    margin: auto;
-    padding: auto;
-    
+  width: 750px;
+  margin: auto;
+  padding: auto;
 }
 
 .game_introduction {
@@ -35,55 +34,49 @@ body {
     justify-content: flex-end;
 }
 
-h1{
-    font-size: 1.5rem;
-    font-family: 'Otomanopee One';
-    
+h1 {
+  font-size: 1.5rem;
+  font-family: "Otomanopee One";
 }
 
-label{
-    font-size: 1rem;
-    font-weight: 200;
-    margin: 1rem 1rem 0.2rem 1rem;
+label {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 1rem 1rem 0.2rem 1rem;
 }
-
-
-
 
 /* GAME CONTAINER */
-.game_container{
-    width: 70%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.game_container {
+  width: 70%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.username_container{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+.username_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.username_input{
-    margin: 0.2rem 1rem 1rem 1rem;
-    width: 14rem;
-    font-size: 1.5rem;
+.username_input {
+  margin: 0.2rem 1rem 1rem 1rem;
+  width: 14rem;
+  font-size: 1.5rem;
 }
-button{
-    font-size: 2rem;
-    font-weight: 700;
-    width: 8rem;
-    height: 6rem;
-    margin: 2rem;
-    border-radius: 10%;
+button {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 8rem;
+  height: 6rem;
+  margin: 2rem;
+  border-radius: 10%;
 }
 
-.start_button{
-    margin: 1rem;
+.start_button {
+  margin: 1rem;
 }
 
 
@@ -100,10 +93,10 @@ button{
     margin-bottom: 3rem;
 }
 
-.score_results{
-    font-size: 1.5rem;
-    font-family: 'Otomanopee One';
-    margin: 0.5rem;
+.score_results {
+  font-size: 1.5rem;
+  font-family: "Otomanopee One";
+  margin: 0.5rem;
 }
 
 /* ROOKIE LEVEL CONTAINER */
@@ -134,27 +127,58 @@ button{
 }
 
 @keyframes shakeAnim {
-  0% {left: 0}
-  1% {left: -3px}
-  2% {left: 5px}
-  3% {left: -8px}
-  4% {left: 8px}
-  5% {left: -5px}
-  6% {left: 3px}
-  7% {left: 0}
+  0% {
+    left: 0;
+  }
+  1% {
+    left: -3px;
+  }
+  2% {
+    left: 5px;
+  }
+  3% {
+    left: -8px;
+  }
+  4% {
+    left: 8px;
+  }
+  5% {
+    left: -5px;
+  }
+  6% {
+    left: 3px;
+  }
+  7% {
+    left: 0;
+  }
 }
 
 @keyframes shake {
-  0% {left: 0}
-  1% {left: -3px}
-  2% {left: 5px}
-  3% {left: -8px}
-  4% {left: 8px}
-  5% {left: -5px}
-  6% {left: 3px}
-  7% {left: 0}
+  0% {
+    left: 0;
+  }
+  1% {
+    left: -3px;
+  }
+  2% {
+    left: 5px;
+  }
+  3% {
+    left: -8px;
+  }
+  4% {
+    left: 8px;
+  }
+  5% {
+    left: -5px;
+  }
+  6% {
+    left: 3px;
+  }
+  7% {
+    left: 0;
+  }
 }
-
 
 /* INSANE LEVEL */
 
@@ -200,18 +224,15 @@ button{
 
 /* Result phrase */
 
-.span_results{
-    font-size: 2rem;
-
+.span_results {
+  font-size: 2rem;
 }
 
 /* Input validation */
 
-
-
-.alert_box{
-    height: 1rem;
-    font-size: 0.5rem;
+.alert_box {
+  height: 1rem;
+  font-size: 0.5rem;
 }
 
 /* Colors */
@@ -226,17 +247,17 @@ body{
 
 }
 
-.alert_box{
-    color: white;
+.alert_box {
+  color: white;
 }
 
 .username_input:invalid {
-    border: 3px solid red;
-    color: red;
+  border: 3px solid red;
+  color: red;
 }
 
-.scores_container{
-    border: solid white 0.3rem;
+.scores_container {
+  border: solid white 0.3rem;
 }
 
 
@@ -271,20 +292,17 @@ button{
     color: black,
 }
 
-.start_button{
-        
-    color: black;
-    background-image: linear-gradient(45deg, black 50%, transparent 50%);
-    background-position: 100%;
-    background-size: 400%;
-    transition: background 500ms ease-in-out;
-    
-      }
+.start_button {
+  color: black;
+  background-image: linear-gradient(45deg, black 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 500ms ease-in-out;
+}
 .start_button:hover {
-        background-position: 0;
-        color: white;
-        
-      }
+  background-position: 0;
+  color: white;
+}
 
 .level_button {
     color: black;
@@ -299,10 +317,8 @@ button{
 
 
 .level_button:hover {
-    background-position: 0;
-        color: white;
-        
-
+  background-position: 0;
+  color: white;
 }
 
 .points_per_click {
@@ -311,7 +327,6 @@ button{
 
 
 /* IS HIDDEN */
-.is_hidden{
-    display: none;
+.is_hidden {
+  display: none;
 }
-

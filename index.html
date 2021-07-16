@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Play With Assembler</title>
-
 
     <script src="/username.js" defer></script>
     <script src="/ranking.js" defer></script>
     <script src="/selectLevelJS.js" defer></script>
     <script src="/insaneLevelJS.js" defer></script>
     <script src="/rookie_level.js" defer></script>
+    <script src="/hard_level.js" defer></script>
     <script src="/final_score_JS.js" defer></script>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <main>
+<<<<<<< HEAD
         <div id="lets_go_container" class="game_introduction">
             <img class="introduction_background_image"src="/images/blue click background.png" alt="blue-tick background"
             <div><button class="lets_go_btn" id="lets_go">Let's Go!!!</button></div>
@@ -96,9 +96,81 @@
                     <p id="third_clicks">20 Clicks</p>
                 </div>
             </div>
+=======
+      <div class="main_container">
+        <div class="game_container" id="game_container">
+          <div class="username_container" id="username_container">
+            <h1>INSERT YOUR USERNAME</h1>
+            <label for="username">Username</label>
+            <input
+              class="username_input"
+              type="text"
+              id="username"
+              pattern="^([a-zA-Z0-9]){1,16}$"
+            />
+            <div class="alert_box" id="alert_box"></div>
+            <button class="start_button" id="start_button">Start</button>
+          </div>
+          <div class="level_selection is_hidden" id="level_selection">
+            <h2 id="level_selection_title">Choose Your Level Wisely !</h2>
+            <button class="level_button" id="roockie">Roockie</button>
+            <button class="level_button" id="hard">Hard</button>
+            <button class="level_button" id="insane">Insane</button>
+          </div>
+
+          <div class="roockie_level is_hidden" id="roockie_level">
+            <button id="start_G">Start Game</button>
+            <button
+              type="button"
+              id="click_roockie"
+              class="click_hit_roockie is_hidden"
+            >
+              HIT ME HARD !
+            </button>
+          </div>
+
+          <div class="hard_level is_hidden" id="hard_level">
+            <button id="start_hard">Start Game</button>
+            <button class="click_hard is_hidden" id="click_hard">
+              Click!!
+            </button>
+          </div>
+          <div class="insane_level is_hidden" id="insane_level">
+            <button id="start_insane">Start Game</button>
+            <button class="click_insane is_hidden" id="click_insane">
+              Click!!!
+            </button>
+          </div>
+
+          <div
+            class="final_score_container is_hidden"
+            id="final_score_container"
+          >
+            <h1>YOUR SCORE</h1>
+            <h3>Yours 10 seconds have finished</h3>
+            <p>You have made <span id="current_score"></span> clicks!!</p>
+            <button id="play_again_button">Play Again</button>
+          </div>
+>>>>>>> joeldev
         </div>
+        <div class="scores_container">
+          <h1>Ranking</h1>
+          <h4 id="current_player_name"></h4>
+          <p id="currently_playing">Currently playing</p>
+          <p class="is_hidden" id="last_result">
+            <span id="last_score"></span>Clicks
+          </p>
+
+          <h4 id="first_name">Marcel</h4>
+          <p id="first_place">50 Clicks</p>
+
+          <h4 id="second_name">Josep</h4>
+          <p id="second_place">30 Clicks</p>
+
+          <h4 id="third_name">Fernando</h4>
+          <p id="third_place">20 Clicks</p>
+        </div>
+      </div>
     </main>
-
-</body>
-
+  </body>
 </html>
