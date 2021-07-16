@@ -16,20 +16,29 @@ let roockieLvl= document.getElementById("roockie_level");
 let hardLvl= document.getElementById("hard_level");
 let insaneLvl= document.getElementById("insane_level");
 
-let insaneStart = document.getElementById('start_insane');
-let insaneClick = document.getElementById('click_insane');
+//  Game Introduction
 
-let roockieLvl = document.getElementById('roockie_level');
-let hardLvl = document.getElementById('hard_level');
-let insaneLvl = document.getElementById('insane_level');
+let mainContainer = document.getElementById('main_container')
+let letsGo = document.getElementById('lets_go_container')
+
+
 
 // EVENT LISTENERS
 
 roockieBtn.addEventListener('click', roockie);
 hardBtn.addEventListener('click', hard);
 insaneBtn.addEventListener('click', insane);
+letsGo.addEventListener('click', presentGame);
 
 // FUNCTIONS
+
+function presentGame() {
+    letsGo.classList.add('is_hidden')
+    mainContainer.classList.remove('is_hidden')
+
+}
+
+
 
 function roockie(){
 

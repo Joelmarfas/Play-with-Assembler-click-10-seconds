@@ -9,12 +9,26 @@ body {
     
 }
 
+.game_introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.lets_go {
+    background-color: #5270fc;
+}
+
+
 .main_container{
     padding: 0.5rem;
     margin: 1rem;
     height: 750px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 h1{
@@ -75,8 +89,8 @@ button{
     font-size: 1.2rem;
 }
 
-#level_selection_title{
-    padding-left: 2.6rem;
+.level_selection_title {
+    text-align: center;
 }
 
 .score_results{
@@ -87,7 +101,7 @@ button{
 
 /* ROOCKIE LEVEL CONTAINER */
 
-.roockie_level{
+.roockie_level {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +110,7 @@ button{
 
 /* HIT ME BUTTON ROOCKIE LEVEL  */
 
-.click_hit_roockie{
+.click_hit_roockie {
     background: red;
     border: 0;
     font-size: 20px;
@@ -141,15 +155,31 @@ button{
 .click_insane{
     position: absolute;
     margin: 0;
+    background: red;
+    border: 0;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+/* HARD LEVEL */
+
+.click_hard {
+    position: absolute;
+    margin: 0;
+    background: red;
+    border: 0;
+    font-size: 20px;
+    padding: 10px 20px;
 }
 
 /* SCORES CONTAINER */
+
 .scores_container{
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-        
+    
     
 }
 
@@ -168,11 +198,14 @@ button{
     height: 1rem;
     font-size: 0.5rem;
 }
+
 /* Colors */
+
 body{
     background-color: black;
     color: white;
 }
+
 .main_container{
     border: solid 1rem white;
 
@@ -191,6 +224,39 @@ body{
     border: solid white 0.3rem;
 }
 
+.current_place_profile {
+    padding-bottom: 4rem;
+}
+
+.first_place_profile {
+    padding: 1rem;
+
+}
+
+#first_place {
+    margin: 0.3rem;
+}
+
+#first_name {
+    margin: 0.3rem;
+}
+
+#first_place {
+    margin: 0.3rem;
+}
+
+#first_name {
+    margin: 0.3rem;
+}
+
+
+.second_place_profile {
+    padding: 1rem;
+}
+
+.third_place_profile {
+    padding: 1rem;
+}
 
 button{
     background-color: white;

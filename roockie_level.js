@@ -15,15 +15,13 @@ function hideG() {
 			ranking.push({Username:userName, Score: counter});
 			let lastResult = document.getElementById("last_result");
 			let currentlyPlaying = document.getElementById("currently_playing");
-			        //  SHOW AND HIDE ELEMENTS
+			  
+			//  SHOW AND HIDE ELEMENTS
 			
 			finalScoreCont.classList.remove('is_hidden');
 			clickRoockie.classList.add('is_hidden');
 			lastResult.classList.remove('is_hidden');
 			currentlyPlaying.classList.add("is_hidden");
-
-
-			
 
 		}, 3000);
 }
@@ -31,7 +29,6 @@ function hideG() {
 // FUNCTION THAT COUNTS THE CLICKS ON PRESSING HIT ME HARD BUTTON
 
 clickRoockie.addEventListener('click', countClicks);
-
 
 function countClicks() {
 	counter += 1;
